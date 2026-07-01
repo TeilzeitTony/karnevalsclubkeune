@@ -2187,3 +2187,245 @@ backdrop-filter:blur(6px);
     box-shadow:0 12px 25px rgba(212,175,55,.45);
 
 }
+
+
+
+
+
+
+
+
+
+
+/* ======================================
+   MOBILE (Handy)
+====================================== */
+
+@media (max-width: 768px){
+
+    .navbar{
+        height:auto;
+        flex-direction:column;
+        padding:20px;
+        gap:20px;
+    }
+
+    .logo{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .logo img{
+        height:90px;
+    }
+
+    .logo h2{
+        font-size:28px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    nav a{
+        font-size:18px;
+    }
+
+    .hero{
+        height:auto;
+        padding:80px 20px;
+    }
+
+    .hero-logo{
+        width:140px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-text{
+        font-size:17px;
+        line-height:1.6;
+    }
+
+    .groups,
+    .events,
+    .gallery,
+    .container{
+        padding:60px 20px;
+    }
+
+    .group-grid,
+    .gallery-grid,
+    .album-grid,
+    .alice-gallery,
+    .contact-grid,
+    .stats-grid,
+    .facts,
+    .success-grid,
+    .footer-content,
+    .about-grid,
+    .teams{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .event-card,
+    .program-card,
+    .dance-card,
+    .event-highlight{
+
+        flex-direction:column;
+
+        display:flex;
+
+    }
+
+    .event-date{
+
+        width:100%;
+
+    }
+
+    .program-card img,
+    .dance-card img,
+    .event-highlight img{
+
+        width:100%;
+        height:auto;
+
+    }
+
+    .page-hero h1{
+        font-size:42px;
+    }
+
+    .about h2{
+        font-size:34px;
+    }
+
+    .section-title h2,
+    .groups h2{
+        font-size:36px;
+    }
+
+    .footer{
+
+        padding:40px 20px;
+
+    }
+
+}
+
+/* ======================================
+   MOBILE NAVIGATION
+====================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+}
+
+@media (max-width:768px){
+
+    .navbar{
+
+        flex-direction:row;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+        padding:20px;
+
+        height:auto;
+
+    }
+
+    .logo{
+
+        flex-direction:row;
+
+        gap:12px;
+
+    }
+
+    .logo img{
+
+        height:70px;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    nav{
+
+        display:none;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:#111;
+
+        flex-direction:column;
+
+        padding:20px;
+
+        gap:20px;
+
+        border-top:2px solid #D4AF37;
+
+    }
+
+    nav.open{
+
+        display:flex;
+
+    }
+
+    nav a{
+
+        font-size:20px;
+
+        text-align:center;
+
+        padding:12px;
+
+    }
+
+}
