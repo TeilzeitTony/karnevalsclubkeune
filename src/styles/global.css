@@ -484,6 +484,22 @@ nav a:hover{
 
     font-size:18px;
 
+    .group-logo{
+
+    text-align:center;
+
+    margin:20px 0;
+
+}
+
+.group-logo img{
+
+    width:180px;
+
+    height:auto;
+
+}
+
 }
 /* ===========================
    EVENTS
