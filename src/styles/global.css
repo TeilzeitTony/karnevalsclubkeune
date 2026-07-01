@@ -500,6 +500,31 @@ nav a:hover{
 
 }
 
+.group-logo{
+    text-align:center;
+    margin:20px 0;
+}
+
+.logo-maennerballett{
+    width:180px;
+}
+
+.logo-raw{
+    width:220px;
+}
+
+.logo-blinky{
+    width:180px;
+}
+
+.logo-funken{
+    width:160px;
+}
+
+.group-logo img{
+    height:auto;
+}
+
 }
 /* ===========================
    EVENTS
