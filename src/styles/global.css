@@ -230,6 +230,90 @@ nav a:hover{
 
 }
 
+/* ==========================
+   HERO HEADER
+========================== */
+
+.hero-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:50px;
+
+    margin:70px 0 40px;
+
+}
+
+.hero-heading{
+
+    text-align:center;
+
+}
+
+.hero-logo{
+
+    width:220px;
+
+    height:auto;
+
+}
+
+.hero-logo-left{
+
+    animation:slideInLeft 1s ease;
+
+}
+
+.hero-logo-right{
+
+    animation:slideInRight 1s ease;
+
+}
+
+@keyframes slideInLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-100px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes slideInRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(100px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
 @media (max-width:768px){
 
 .hero{
@@ -3381,6 +3465,32 @@ span{
 
 @media (max-width:768px){
 
+.hero-header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.hero-logo{
+
+    width:170px;
+
+}
+
+.hero-heading{
+
+    text-align:center;
+
+}
+
+.hero-logo-right{
+
+    display:none;
+
+}
+
 .hero-content{
 
     width:100%;
@@ -3445,6 +3555,16 @@ span{
     margin:25px auto;
 
     line-height:1.8;
+
+}
+
+.schlachtruf-banner{
+
+    max-width:300px;
+
+    padding:12px;
+
+    margin:25px auto;
 
 }
 
@@ -3633,5 +3753,53 @@ span{
     border-top:1px solid rgba(255,255,255,.1);
 
 }
+
+}
+
+/* ==========================
+   SCHLACHTRUF BANNER
+========================== */
+
+.schlachtruf-banner{
+
+    margin:35px auto;
+
+    max-width:520px;
+
+    padding:18px 30px;
+
+    border-top:3px solid #d4af37;
+
+    border-bottom:3px solid #d4af37;
+
+    animation:bannerReveal 1.2s ease;
+
+}
+
+.schlachtruf-banner img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+@keyframes bannerReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
