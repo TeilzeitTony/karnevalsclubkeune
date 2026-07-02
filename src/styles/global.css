@@ -3369,13 +3369,11 @@ span{
 
 .hero-title{
 
-    font-size:4rem;
-
-    line-height:1.1;
-
+    font-size:3rem;
+    line-height:1.2;
     text-align:center;
 
-    margin:20px 0;
+    text-wrap:balance;
 
 }
 
@@ -3444,11 +3442,13 @@ span{
 
     }
 
-    .hero-title{
+@media (max-width:768px){
 
-    font-size:2rem;
+.hero-title{
 
-    line-height:1.2;
+    font-size:1.8rem;
+
+}
 
 }
 
@@ -3486,21 +3486,7 @@ span{
 
 }
 
-@media (max-width:768px){
 
-.hero-title{
-    font-size:1.9rem;
-}
-
-h2{
-    font-size:1.7rem;
-}
-
-.team-card h3{
-    font-size:1.3rem;
-}
-
-}
 
 @media (max-width:768px){
 
