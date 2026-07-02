@@ -2862,3 +2862,51 @@ backdrop-filter:blur(6px);
     }
 
 }
+
+/* ==========================
+   Werbeflyer
+========================== */
+
+.flyer-card{
+
+    max-width:500px;
+
+    margin:50px auto;
+
+    text-align:center;
+
+}
+
+.flyer-card img{
+
+    width:100%;
+
+    height:auto;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.flyer-card img:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+}
+
+.flyer-text{
+
+    margin-top:18px;
+
+    color:#d4af37;
+
+    font-size:16px;
+
+}
