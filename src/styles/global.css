@@ -699,9 +699,13 @@ nav a:hover{
 
 .group-info h3{
 
-    font-size:32px;
+    font-size:1.7rem;
 
-    margin-bottom:12px;
+    line-height:1.2;
+
+    margin:12px 0;
+
+    text-align:center;
 
 }
 
@@ -1247,6 +1251,20 @@ nav a:hover{
     font-size:34px;
 
     margin-bottom:15px;
+
+}
+
+.team-info h3{
+
+    font-size:1.8rem;
+
+    line-height:1.2;
+
+    text-align:center;
+
+    word-break:normal;
+
+    overflow-wrap:normal;
 
 }
 
@@ -3453,6 +3471,7 @@ img{
 }
 
 p,
+h1,
 h2,
 h3,
 h4,
@@ -3461,7 +3480,8 @@ h6,
 a,
 span{
 
-    overflow-wrap:break-word;
+    overflow-wrap:anywhere;
+
 }
 
 .team-info,
@@ -3595,6 +3615,42 @@ span{
 
     width:100%;
     display:block;
+
+}
+
+.group-grid{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+.group-card{
+
+    width:100%;
+
+}
+
+.group-info{
+
+    padding:20px;
+
+}
+
+.group-info h3{
+
+    font-size:1.25rem;
+
+    line-height:1.2;
+
+    white-space:nowrap;
+
+}
+
+.group-info p{
+
+    font-size:1rem;
 
 }
 /* ===========================================
