@@ -3309,3 +3309,13 @@ span{
     }
 
 }
+
+.team-info,
+.dance-content,
+.hero-content,
+.program-content,
+.media-card{
+
+    width:100%;
+    overflow-wrap:break-word;
+}
