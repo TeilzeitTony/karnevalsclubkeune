@@ -219,8 +219,10 @@ nav a:hover{
 
 .hero-logo{
 
-    width:220px;
+    width:260px;
     height:auto;
+
+    animation:logoFade 1s ease;
 
 }
 
@@ -333,9 +335,18 @@ nav a:hover{
 
 .hero-logo{
 
-    width:180px;
+    width:170px;
+    margin:0 auto 20px;
 
-    margin-bottom:25px;
+}
+
+.schlachtruf-banner{
+
+    max-width:290px;
+
+    padding:10px;
+
+    margin:20px auto;
 
 }
 
@@ -3560,14 +3571,32 @@ span{
 
 .schlachtruf-banner{
 
-    max-width:300px;
+    width:100%;
+    max-width:520px;
 
-    padding:12px;
+    margin:30px auto;
 
-    margin:25px auto;
+    padding:18px 25px;
+
+    border-top:2px solid #d4af37;
+    border-bottom:2px solid #d4af37;
+
+    background:rgba(255,255,255,.03);
+
+    border-radius:12px;
+
+    backdrop-filter:blur(5px);
+
+    animation:bannerReveal 1.3s ease;
 
 }
 
+.schlachtruf-banner img{
+
+    width:100%;
+    display:block;
+
+}
 /* ===========================================
    SMARTPHONE
 =========================================== */
@@ -3786,11 +3815,31 @@ span{
 
 @keyframes bannerReveal{
 
+    0%{
+
+        opacity:0;
+
+        transform:translateY(40px) scale(.95);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:translateY(0) scale(1);
+
+    }
+
+}
+
+@keyframes logoFade{
+
     from{
 
         opacity:0;
 
-        transform:translateY(40px);
+        transform:scale(.8);
 
     }
 
@@ -3798,8 +3847,47 @@ span{
 
         opacity:1;
 
-        transform:translateY(0);
+        transform:scale(1);
 
     }
+
+}
+
+@keyframes logoFade{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}.hero-logo,
+.schlachtruf-banner{
+
+    transition:.4s;
+
+}
+
+.hero-logo:hover{
+
+    transform:scale(1.04);
+
+}
+
+.schlachtruf-banner:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 35px rgba(212,175,55,.25);
 
 }
