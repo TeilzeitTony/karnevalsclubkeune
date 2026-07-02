@@ -339,25 +339,21 @@ nav a:hover{
 
 .hero h1{
 
-    font-size:2rem;
+    font-size:3rem;
 
     line-height:1.2;
 
-    word-break:break-word;
+    text-align:center;
+
+    color:white;
+
+    margin:20px 0;
 
 }
 
 .hero p{
 
-    margin-top:15px;
-
-    font-size:18px;
-
-    line-height:1.6;
-
-    color:#dddddd;
-
-    word-break:break-word;
+    overflow-wrap: break-word;
 
 }
 
@@ -1724,7 +1720,7 @@ nav a:hover{
 
     transition:.3s;
 
-    word-break:break-word;
+    overflow-wrap: anywhere;
 
 }
 
@@ -3356,17 +3352,17 @@ span{
 
 }
 
+@media (max-width:768px){
+
 .hero-content{
 
     width:100%;
-    max-width:900px;
-
-    margin:0 auto;
-
-    padding:0 20px;
+    max-width:100%;
+    padding:0 25px;
 
 }
 
+}
 .hero-title{
 
     font-size:3rem;
@@ -3444,9 +3440,17 @@ span{
 
 @media (max-width:768px){
 
+@media (max-width:768px){
+
 .hero-title{
 
-    font-size:1.8rem;
+    font-size:1.5rem;   /* statt 1.8rem */
+
+    line-height:1.25;
+
+    white-space:normal;
+
+}
 
 }
 
